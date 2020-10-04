@@ -45,8 +45,8 @@ d3.csv("assets/data/data.csv").then(function(health_data){
     .range([0, chartWidth]);
 
     //Create the axis functions
-    var xAxis=d3.axisLeft(yLinearScale);
-    var yAxis=d3.axisBottom(xLinearScale);
+    var yAxis=d3.axisLeft(yLinearScale);
+    var xAxis=d3.axisBottom(xLinearScale);
 
     //Append the axis to the chart
     chartGroup.append('g')
@@ -67,5 +67,7 @@ d3.csv("assets/data/data.csv").then(function(health_data){
      .attr('opacity', "0.75")
      .attr('class', 'stateCircle')
      .attr('stroke', 'black');
+
+     //Initializing tooltip in the chart
     
 })
