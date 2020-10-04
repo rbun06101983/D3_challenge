@@ -69,5 +69,9 @@ d3.csv("assets/data/data.csv").then(function(health_data){
      .attr('stroke', 'black');
 
      //Initializing tooltip in the chart
+     var toolTip=d3.tip()
+     .attr('class', 'd3-tip')
+     .offset([0,0])
+     .html(function(d))
     
 })
