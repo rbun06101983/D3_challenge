@@ -99,12 +99,12 @@ d3.csv("assets/data/data.csv").then(function(health_data){
      .attr('x', 0-(chartHeight/2))
      .attr('dy', "1em")
      .attr('class', 'axisText')
-     .text("Lacks Healthcare (%")
+     .text("Lacks Healthcare (%)")
 
     chartGroup.append('text')
      .attr('transform', `translate(${chartWidth/2}, ${chartHeight+margin.top+30})`)
      .attr('class','axisText')
-     .text('Poverty (%')
+     .text('Poverty (%)')
 
     //State Abbreviations in circles
     chartGroup.append('text')
